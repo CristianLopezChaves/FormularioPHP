@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html LANG="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+        <h2>Formulario:</h2>
+        <form action="index.php" method="post" >
+	Nombre: <input type="text" name="nombre"><br>
+    	Email: <input type="text" name="email"><br>
+	Contraseña: (Se verá al enviar el formulario) <input type="password" name="password"><br>
+	Menor o mayor de edad? <input type="radio" id="menormayor" name="mayormenor" value="SI">
+				<label for="menormayor">Mayor</label>
+				<input type="radio" id="menormayor2" name="mayormenor" value="NO">
+				<label for="menormayor2">Menor</label> <br> <br>
+	De donde eres? <select name="lugar" id="lugar">
+		<option>...</option>
+		<option>Santa Coloma de Gramanet</option>
+		<option>Barcelona</option>
+		<option>Badalona</option>
+		<option>Manresa</option>
+		</select> <br>
+	Que colores te gustan? <input type="checkbox" name="colores1" value="primer_checkbox">
+				<label for="primer_checkbox"> Azul</label>
+				<input type="checkbox" name="colores2" value="segundo_checkbox">
+				<label for="segundo_checkbox">Verde</label>
+				<input type="checkbox" name="colores3" value="tercer_checkbox">
+                                <label for="tercer_checkbox">Amarillo</label>
+				<input type="checkbox" name="colores4" value="cuarto_checkbox">
+                                <label for="cuarto_checkbox">Rojo</label>
+                                <input type="checkbox" name="colores5" value="quinto_checkbox">
+                                <label for="quinto_checkbox">Naranja</label> <br> <br>
+	Adjunta una imagen de la parte delantera del DNI: <label for="DNI"> Selecciona un archivo: </label>
+								<input type="file" id="DNI" name="DNI" accept="image/png, image/jpg"> <br> <br>
+    	<input type="submit" name="submit" value="Enviar">
+	</form>
+</body>
+</html>
